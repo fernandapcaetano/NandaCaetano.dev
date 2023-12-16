@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+/* @font-face {
+    font-family: Jura;
+    src: url(fonte/jura/JuraBook.ttf);
+} */
+:root{
+    --background-color: #0E0E0F;
+    --color: white;
+    --titulo-pagina: #AAAAAA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: 'Jura', sans-serif;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+header .menu{
+
+}
+header .menu .barras{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.menu .barras .barra{
+    background-color: var(--color);
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+}
+/* Click quando clicar js no lugar de .barras */
+.menu .click{
+    position: relative;
+}
+.menu .click .barra{
+    position: absolute;
+    background-color: var(--color);
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.menu .click #barra1{
+    transform: rotate(45deg);
+}
+.menu .click #barra2{
+    transform: rotate(-45deg);
+}
+.menu .click #barra3{
+    display: none;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 22px; 
+    
+}
+header ul a{
+    text-decoration: none;
+    color: var(--color);
+    background-color: var(--color);
+    color: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.titulo-pagina{
+    color: var(--titulo-pagina);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.esquerda p{
+    font-size: 22px;
+}
+.esquerda h1{
+    font-size: 40px; 
+}
+.esquerda span{
+    display: block;
+    font-size: 43px;
+}
+.esquerda ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 20px;
+}
+.esquerda ul li img{
+    width: 40px;
+}
+.direita{
+    background-image: url(../img/home_desenho.svg);
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: calc(100vh - 80px);
+}
