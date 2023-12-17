@@ -37,6 +37,7 @@ header .menu .barras{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    cursor: pointer;
 }
 .menu .barras .barra{
     background-color: var(--color);
@@ -84,7 +85,7 @@ header ul a{
     border-radius: 2px;
 }
 
-main{
+main .home{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -98,6 +99,9 @@ main{
     margin-top: 80px;
     margin-bottom: 30px;
 }
+.home .esquerda, .home .direita{
+    width: 400px;
+}
 .esquerda p{
     font-size: 22px;
 }
@@ -108,7 +112,7 @@ main{
     display: block;
     font-size: 43px;
 }
-.esquerda ul{
+.home .esquerda ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,9 +122,81 @@ main{
 .esquerda ul li img{
     width: 40px;
 }
-.direita{
+.home .direita{
     background-image: url(../img/home_desenho.svg);
     background-repeat: no-repeat;
     width: 30vw;
     height: calc(100vh - 80px);
+}
+
+.skills{
+
+}
+.skills .esquerda, .skills .direita{
+    width: 400px;
+}
+.skills .centro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills .centro .esquerda p{
+    font-size: 32px;
+    margin-bottom: 15px;
+    
+}
+.skills .centro .esquerda ul{
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 22px;
+}
+.skills .centro .esquerda ul li{
+    margin-bottom: 8px;
+    width: 500px;
+}
+.skills .centro .direita ul{
+    position: relative;
+}
+.skills .centro .direita ul li{
+    position: absolute;
+}
+.skills .centro .direita ul li{
+    font-size: 22px;
+}
+.skills .centro .direita ul li:hover{
+    font-size: 28px;
+}
+.skills .centro .direita ul #ling1{
+
+}
+.skills .centro .direita ul #ling2{
+    left: 250px;
+    top: 10px;
+}
+.skills .centro .direita ul #ling3{
+    top: 40px;
+    left: 40px;
+}
+.skills .centro .direita ul #ling4{
+    top: 80px;
+}
+.skills .centro .direita ul #ling5{
+    top: 60px;
+    left: 250px;
+}
+.skills .centro .direita ul #ling6{
+    top: 120px;
+    left: 100px;
+}
+.skills .centro .direita ul #ling7{
+    top: 100px;
+    left: 200px;
+}
+.skills .centro .direita ul #ling8{
+    top: 160px;
+}
+.skills .centro .direita ul #ling9{
+    top: 140px;
+    left: 200px;
 }
